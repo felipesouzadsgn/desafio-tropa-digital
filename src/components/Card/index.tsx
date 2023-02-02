@@ -1,4 +1,5 @@
 import "./styles.scss";
+import { CalendarBlank } from "phosphor-react";
 
 interface CardProps {
   time: number;
@@ -11,7 +12,10 @@ export function Card({ time, img, title, description }: CardProps) {
   return (
     <div className="card">
       <div className="card__container">
-        <span className="card__time">{time}min atrás</span>
+        <span className="card__time">
+          <CalendarBlank size={24} />
+          {time}min atrás
+        </span>
         <div className="card__img">
           <img src={img} alt={title} />
         </div>

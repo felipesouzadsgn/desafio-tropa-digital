@@ -7,6 +7,9 @@
 
   &__time {
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.708);
     color: white;

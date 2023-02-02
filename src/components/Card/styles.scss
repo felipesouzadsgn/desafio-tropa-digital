@@ -1,0 +1,39 @@
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+
+  position: relative;
+
+  &__time {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.708);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  &__title {
+    margin-top: 1rem;
+  }
+  &__description {
+    margin-top: 0.25rem;
+  }
+
+  &__img {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    img {
+      width: 100%;
+      position: absolute;
+    }
+  }
+}

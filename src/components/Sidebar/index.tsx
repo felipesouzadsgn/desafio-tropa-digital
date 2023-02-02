@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 export function Sidebar() {
   return (
     <aside className="nav">
-      <a href="/">
+      <a href="/home">
         <img src={logo} alt="Logo Tropa Digital" />
       </a>
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/" className="nav__link active">
+          <Link to="/home" className="nav__link active">
             <House size={24} weight="fill" />
             Ìnicio
           </Link>
